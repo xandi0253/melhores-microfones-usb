@@ -15,3 +15,6 @@ function mmu_enqueue_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'mmu_enqueue_styles');
+
+<?php
+// Complete functions.php code here
