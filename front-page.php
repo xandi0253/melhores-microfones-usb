@@ -114,8 +114,131 @@ get_header();
 
     </section>
 
+        <!-- ESCOLHA POR FINALIDADE -->
+    <section class="mmu-use-cases">
+
+        <div class="mmu-container">
+
+            <header class="mmu-use-cases-heading">
+
+                <span class="mmu-eyebrow">
+                    ESCOLHA POR FINALIDADE
+                </span>
+
+                <h2>
+                    Qual microfone USB você procura?
+                </h2>
+
+                <p>
+                    Encontre conteúdos e recomendações de acordo
+                    com a forma como você pretende usar seu microfone.
+                </p>
+
+            </header>
+
+
+            <div class="mmu-use-cases-grid">
+
+                <a
+                    class="mmu-use-case-card"
+                    href="<?php echo esc_url( home_url( '/category/microfone-usb-para-podcast/' ) ); ?>"
+                >
+                    <span class="mmu-use-case-icon">
+                        🎙️
+                    </span>
+
+                    <h3>
+                        Podcast
+                    </h3>
+
+                    <p>
+                        Microfones para voz, entrevistas,
+                        podcasts e gravações.
+                    </p>
+
+                    <strong>
+                        Ver opções →
+                    </strong>
+                </a>
+
+
+                <a
+                    class="mmu-use-case-card"
+                    href="<?php echo esc_url( home_url( '/category/microfone-usb-para-streaming/' ) ); ?>"
+                >
+                    <span class="mmu-use-case-icon">
+                        🎧
+                    </span>
+
+                    <h3>
+                        Streaming
+                    </h3>
+
+                    <p>
+                        Modelos para lives, games,
+                        transmissões e criação de conteúdo.
+                    </p>
+
+                    <strong>
+                        Ver opções →
+                    </strong>
+                </a>
+
+
+                <a
+                    class="mmu-use-case-card"
+                    href="<?php echo esc_url( home_url( '/category/microfone-de-mesa/' ) ); ?>"
+                >
+                    <span class="mmu-use-case-icon">
+                        💻
+                    </span>
+
+                    <h3>
+                        Reuniões e trabalho
+                    </h3>
+
+                    <p>
+                        Microfones para chamadas,
+                        aulas, reuniões e home office.
+                    </p>
+
+                    <strong>
+                        Ver opções →
+                    </strong>
+                </a>
+
+
+                <a
+                    class="mmu-use-case-card"
+                    href="<?php echo esc_url( home_url( '/category/guia-de-compras/' ) ); ?>"
+                >
+                    <span class="mmu-use-case-icon">
+                        ⭐
+                    </span>
+
+                    <h3>
+                        Custo-benefício
+                    </h3>
+
+                    <p>
+                        Encontre modelos equilibrados
+                        entre preço, qualidade e recursos.
+                    </p>
+
+                    <strong>
+                        Ver opções →
+                    </strong>
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
     <!-- BENEFÍCIOS -->
+
     <section class="mmu-benefits">
 
         <div class="mmu-container mmu-benefits-grid">

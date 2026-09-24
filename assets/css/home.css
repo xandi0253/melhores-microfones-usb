@@ -714,6 +714,187 @@
     outline-offset: 3px;
 }
 
+/* =========================================================
+   USE CASES - ESCOLHA POR FINALIDADE
+   ========================================================= */
+
+.mmu-use-cases {
+    padding: 90px 0;
+    background: var(--mmu-white);
+}
+
+.mmu-use-cases-heading {
+    max-width: 720px;
+    margin-bottom: 40px;
+}
+
+.mmu-use-cases-heading h2 {
+    margin: 0;
+
+    color: var(--mmu-dark);
+
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.mmu-use-cases-heading p {
+    max-width: 620px;
+
+    margin: 18px 0 0;
+
+    color: var(--mmu-muted);
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* GRID */
+
+.mmu-use-cases-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* CARD */
+
+.mmu-use-case-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 280px;
+
+    padding: 28px;
+
+    border: 1px solid var(--mmu-border);
+    border-radius: var(--mmu-radius);
+
+    background: var(--mmu-white);
+    color: inherit;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* HOVER */
+
+.mmu-use-case-card:hover,
+.mmu-use-case-card:focus {
+    border-color: var(--mmu-primary);
+
+    transform: translateY(-5px);
+
+    box-shadow: var(--mmu-shadow);
+}
+
+
+/* ÍCONE */
+
+.mmu-use-case-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 54px;
+    height: 54px;
+
+    margin-bottom: 24px;
+
+    border-radius: 14px;
+
+    background: #eff6ff;
+
+    font-size: 27px;
+    line-height: 1;
+}
+
+
+/* TÍTULO */
+
+.mmu-use-case-card h3 {
+    margin: 0 0 12px;
+
+    color: var(--mmu-dark);
+
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+
+/* DESCRIÇÃO */
+
+.mmu-use-case-card p {
+    margin: 0 0 24px;
+
+    color: var(--mmu-muted);
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* LINK DO CARD */
+
+.mmu-use-case-card strong {
+    margin-top: auto;
+
+    color: var(--mmu-primary);
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   USE CASES - RESPONSIVIDADE
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .mmu-use-cases-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 640px) {
+
+    .mmu-use-cases {
+        padding: 64px 0;
+    }
+
+    .mmu-use-cases-heading {
+        margin-bottom: 30px;
+    }
+
+    .mmu-use-cases-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mmu-use-case-card {
+        min-height: auto;
+        padding: 22px;
+    }
+
+}
+
 
 /* =========================================================
    TABLET
