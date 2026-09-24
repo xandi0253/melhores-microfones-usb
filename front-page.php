@@ -2,7 +2,7 @@
 /**
  * Front Page
  *
- * Homepage for Melhores Microfones USB.
+ * Página inicial do site Melhores Microfones USB.
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -22,33 +22,33 @@ get_header();
             <div class="mmu-hero-content">
 
                 <span class="mmu-eyebrow">
-                    GUIDES • REVIEWS • COMPARISONS
+                    GUIAS • REVIEWS • COMPARATIVOS
                 </span>
 
                 <h1>
-                    Find the ideal USB microphone for you
+                    Encontre o microfone USB ideal para você
                 </h1>
 
                 <p class="mmu-hero-description">
-                    Reviews, comparisons and buying guides to help you
-                    choose the right USB microphone for podcasts,
-                    streaming, meetings, recordings and content creation.
+                    Comparativos, análises e guias para ajudar você a escolher
+                    o melhor microfone USB para podcast, streaming, reuniões,
+                    gravações e criação de conteúdo.
                 </p>
 
                 <div class="mmu-hero-actions">
 
                     <a
-                        href="#highlights"
+                        href="#destaques"
                         class="mmu-btn mmu-btn-primary"
                     >
-                        View microphones
+                        Ver microfones
                     </a>
 
                     <a
-                        href="#guides"
+                        href="#guias"
                         class="mmu-btn mmu-btn-secondary"
                     >
-                        Explore guides
+                        Explorar guias
                     </a>
 
                 </div>
@@ -59,11 +59,11 @@ get_header();
             <aside class="mmu-hero-card">
 
                 <span class="mmu-card-label">
-                    START HERE
+                    COMECE POR AQUI
                 </span>
 
                 <h2>
-                    What are you looking for?
+                    O que você procura?
                 </h2>
 
                 <div class="mmu-quick-links">
@@ -72,11 +72,11 @@ get_header();
                         href="<?php echo esc_url( home_url( '/category/microfone-de-mesa/' ) ); ?>"
                     >
                         <strong>
-                            Desktop microphones
+                            Microfone de mesa
                         </strong>
 
                         <span>
-                            For meetings, study and work
+                            Para reuniões, estudos e trabalho
                         </span>
                     </a>
 
@@ -85,11 +85,11 @@ get_header();
                         href="<?php echo esc_url( home_url( '/category/microfone-usb-para-podcast/' ) ); ?>"
                     >
                         <strong>
-                            Podcasts and content
+                            Podcast e criação de conteúdo
                         </strong>
 
                         <span>
-                            For recording, videos and streaming
+                            Para gravações, vídeos e streaming
                         </span>
                     </a>
 
@@ -98,11 +98,11 @@ get_header();
                         href="<?php echo esc_url( home_url( '/category/comparativo/' ) ); ?>"
                     >
                         <strong>
-                            Comparisons
+                            Comparativos
                         </strong>
 
                         <span>
-                            Compare models before buying
+                            Compare modelos antes de comprar
                         </span>
                     </a>
 
@@ -115,7 +115,7 @@ get_header();
     </section>
 
 
-    <!-- BENEFITS -->
+    <!-- BENEFÍCIOS -->
     <section class="mmu-benefits">
 
         <div class="mmu-container mmu-benefits-grid">
@@ -123,11 +123,11 @@ get_header();
             <div class="mmu-benefit">
 
                 <strong>
-                    Objective comparisons
+                    Comparações objetivas
                 </strong>
 
                 <span>
-                    Understand the main differences between models.
+                    Entenda as principais diferenças entre os modelos.
                 </span>
 
             </div>
@@ -136,11 +136,11 @@ get_header();
             <div class="mmu-benefit">
 
                 <strong>
-                    Buying guides
+                    Guias de compra
                 </strong>
 
                 <span>
-                    Learn what to consider before choosing.
+                    Saiba o que considerar antes de escolher.
                 </span>
 
             </div>
@@ -149,11 +149,11 @@ get_header();
             <div class="mmu-benefit">
 
                 <strong>
-                    USB microphone focus
+                    Especialistas em microfones USB
                 </strong>
 
                 <span>
-                    Specialized content focused on this market.
+                    Conteúdo focado exclusivamente neste segmento.
                 </span>
 
             </div>
@@ -163,9 +163,9 @@ get_header();
     </section>
 
 
-    <!-- LATEST ARTICLES -->
+    <!-- CONTEÚDOS EM DESTAQUE -->
     <section
-        id="highlights"
+        id="destaques"
         class="mmu-section"
     >
 
@@ -176,18 +176,18 @@ get_header();
                 <div>
 
                     <span class="mmu-eyebrow">
-                        FEATURED CONTENT
+                        CONTEÚDOS EM DESTAQUE
                     </span>
 
                     <h2>
-                        Latest guides and reviews
+                        Guias e análises recentes
                     </h2>
 
                 </div>
 
                 <p>
-                    Explore our latest articles about USB microphones,
-                    comparisons, buying guides and product reviews.
+                    Confira nossos conteúdos mais recentes sobre microfones USB,
+                    comparativos, guias de compra e análises de produtos.
                 </p>
 
             </header>
@@ -242,7 +242,7 @@ get_header();
                                     <div class="mmu-image-placeholder">
 
                                         <span>
-                                            USB Microphones
+                                            Melhores Microfones USB
                                         </span>
 
                                     </div>
@@ -299,7 +299,7 @@ get_header();
                                     class="mmu-read-more"
                                     href="<?php the_permalink(); ?>"
                                 >
-                                    Read article →
+                                    Ler conteúdo →
                                 </a>
 
                             </div>
@@ -318,12 +318,12 @@ get_header();
                     <div class="mmu-no-posts">
 
                         <h3>
-                            New content coming soon
+                            Novos conteúdos em breve
                         </h3>
 
                         <p>
-                            We are preparing new guides,
-                            comparisons and USB microphone reviews.
+                            Estamos preparando novos guias,
+                            comparativos e análises de microfones USB.
                         </p>
 
                     </div>
@@ -337,9 +337,9 @@ get_header();
     </section>
 
 
-    <!-- GUIDES -->
+    <!-- GUIAS -->
     <section
-        id="guides"
+        id="guias"
         class="mmu-section mmu-section-soft"
     >
 
@@ -350,19 +350,18 @@ get_header();
                 <div>
 
                     <span class="mmu-eyebrow">
-                        LEARN BEFORE YOU BUY
+                        APRENDA ANTES DE COMPRAR
                     </span>
 
                     <h2>
-                        Explore our content
+                        Explore nossos conteúdos
                     </h2>
 
                 </div>
 
                 <p>
-                    Find information to help you understand
-                    specifications, features and differences
-                    between USB microphones.
+                    Encontre informações para entender especificações,
+                    recursos e diferenças entre os principais microfones USB.
                 </p>
 
             </header>
@@ -382,17 +381,16 @@ get_header();
                     <div>
 
                         <h3>
-                            Buying guides
+                            Guias de compra
                         </h3>
 
                         <p>
-                            Understand the specifications,
-                            features and details that matter
-                            before purchasing.
+                            Entenda características, especificações e recursos
+                            importantes antes de escolher seu microfone.
                         </p>
 
                         <strong>
-                            Explore guides →
+                            Explorar guias →
                         </strong>
 
                     </div>
@@ -412,17 +410,16 @@ get_header();
                     <div>
 
                         <h3>
-                            Comparisons
+                            Comparativos
                         </h3>
 
                         <p>
-                            Compare different microphones
-                            and understand their main
-                            differences.
+                            Compare diferentes microfones USB e descubra
+                            as principais diferenças entre os modelos.
                         </p>
 
                         <strong>
-                            View comparisons →
+                            Ver comparativos →
                         </strong>
 
                     </div>
@@ -446,13 +443,12 @@ get_header();
                         </h3>
 
                         <p>
-                            Discover features, advantages,
-                            limitations and possible uses
-                            for each model.
+                            Conheça características, recursos, vantagens
+                            e limitações dos modelos analisados.
                         </p>
 
                         <strong>
-                            View reviews →
+                            Ver reviews →
                         </strong>
 
                     </div>
@@ -466,7 +462,7 @@ get_header();
     </section>
 
 
-    <!-- METHODOLOGY -->
+    <!-- METODOLOGIA -->
     <section class="mmu-method">
 
         <div class="mmu-container mmu-method-grid">
@@ -474,17 +470,17 @@ get_header();
             <div class="mmu-method-content">
 
                 <span class="mmu-eyebrow">
-                    OUR APPROACH
+                    NOSSA ABORDAGEM
                 </span>
 
                 <h2>
-                    Information to help you make a better choice
+                    Informação para ajudar você a escolher
                 </h2>
 
                 <p>
-                    We organize specifications, features,
-                    differences between models and usage
-                    scenarios to make your research easier.
+                    Organizamos especificações, recursos, diferenças entre
+                    modelos e situações de uso para tornar sua pesquisa
+                    mais simples antes da compra.
                 </p>
 
             </div>
@@ -499,7 +495,7 @@ get_header();
                     </strong>
 
                     <span>
-                        Features and specifications
+                        Características e especificações
                     </span>
 
                 </div>
@@ -512,7 +508,7 @@ get_header();
                     </strong>
 
                     <span>
-                        Comparison between alternatives
+                        Comparação entre alternativas
                     </span>
 
                 </div>
@@ -525,7 +521,7 @@ get_header();
                     </strong>
 
                     <span>
-                        Recommendations by type of use
+                        Indicação para diferentes tipos de uso
                     </span>
 
                 </div>
@@ -537,7 +533,7 @@ get_header();
     </section>
 
 
-    <!-- FINAL CTA -->
+    <!-- CTA FINAL -->
     <section class="mmu-final-cta">
 
         <div class="mmu-container">
@@ -549,19 +545,19 @@ get_header();
                 </span>
 
                 <h2>
-                    Start your search for the right microphone
+                    Encontre o microfone certo para sua necessidade
                 </h2>
 
                 <p>
-                    Explore our latest guides, comparisons
-                    and reviews before making your choice.
+                    Explore nossos guias, comparativos e análises para
+                    conhecer melhor os modelos antes de fazer sua escolha.
                 </p>
 
                 <a
-                    href="#highlights"
+                    href="#destaques"
                     class="mmu-btn mmu-btn-primary"
                 >
-                    Explore content
+                    Explorar conteúdos
                 </a>
 
             </div>
