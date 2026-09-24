@@ -1,1 +1,845 @@
-/* Complete home.css code here */
+/* =========================================================
+   MELHORES MICROFONES USB
+   Homepage
+   ========================================================= */
+
+:root {
+    --mmu-primary: #2563eb;
+    --mmu-primary-dark: #1d4ed8;
+    --mmu-dark: #111827;
+    --mmu-text: #374151;
+    --mmu-muted: #6b7280;
+    --mmu-border: #e5e7eb;
+    --mmu-soft: #f7f8fa;
+    --mmu-white: #ffffff;
+
+    --mmu-radius: 18px;
+    --mmu-radius-small: 12px;
+
+    --mmu-shadow:
+        0 18px 45px rgba(17, 24, 39, 0.08);
+}
+
+
+/* =========================================================
+   BASE
+   ========================================================= */
+
+.mmu-home {
+    width: 100%;
+    overflow: hidden;
+    background: var(--mmu-white);
+    color: var(--mmu-text);
+}
+
+.mmu-container {
+    width: min(1180px, calc(100% - 40px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.mmu-hero {
+    padding: 90px 0;
+
+    background:
+        radial-gradient(
+            circle at 85% 20%,
+            rgba(37, 99, 235, 0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #eef4ff 100%
+        );
+}
+
+.mmu-hero-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 64px;
+    align-items: center;
+}
+
+.mmu-eyebrow {
+    display: block;
+
+    margin-bottom: 16px;
+
+    color: var(--mmu-primary);
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    line-height: 1.4;
+}
+
+.mmu-hero h1 {
+    max-width: 720px;
+
+    margin: 0 0 24px;
+
+    color: var(--mmu-dark);
+
+    font-size: clamp(42px, 5vw, 68px);
+    font-weight: 800;
+    line-height: 1.03;
+    letter-spacing: -0.045em;
+}
+
+.mmu-hero-description {
+    max-width: 680px;
+
+    margin: 0;
+
+    color: var(--mmu-text);
+
+    font-size: 19px;
+    line-height: 1.7;
+}
+
+.mmu-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    margin-top: 32px;
+}
+
+
+/* =========================================================
+   BUTTONS
+   ========================================================= */
+
+.mmu-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 50px;
+
+    padding: 13px 22px;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.mmu-btn-primary {
+    border: 1px solid var(--mmu-primary);
+    background: var(--mmu-primary);
+    color: var(--mmu-white);
+}
+
+.mmu-btn-primary:hover,
+.mmu-btn-primary:focus {
+    background: var(--mmu-primary-dark);
+    border-color: var(--mmu-primary-dark);
+    color: var(--mmu-white);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 12px 30px rgba(37, 99, 235, 0.22);
+}
+
+.mmu-btn-secondary {
+    border: 1px solid var(--mmu-border);
+    background: var(--mmu-white);
+    color: var(--mmu-dark);
+}
+
+.mmu-btn-secondary:hover,
+.mmu-btn-secondary:focus {
+    border-color: var(--mmu-primary);
+    color: var(--mmu-primary);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO CARD
+   ========================================================= */
+
+.mmu-hero-card {
+    padding: 30px;
+
+    border: 1px solid var(--mmu-border);
+    border-radius: var(--mmu-radius);
+
+    background: rgba(255, 255, 255, 0.94);
+
+    box-shadow:
+        0 20px 60px rgba(17, 24, 39, 0.09);
+}
+
+.mmu-card-label {
+    display: block;
+
+    color: var(--mmu-primary);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.mmu-hero-card h2 {
+    margin: 8px 0 22px;
+
+    color: var(--mmu-dark);
+
+    font-size: 27px;
+    line-height: 1.2;
+}
+
+.mmu-quick-links {
+    display: grid;
+    gap: 10px;
+}
+
+.mmu-quick-links a {
+    display: block;
+
+    padding: 16px;
+
+    border: 1px solid var(--mmu-border);
+    border-radius: var(--mmu-radius-small);
+
+    background: var(--mmu-white);
+    color: var(--mmu-dark);
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.mmu-quick-links a:hover,
+.mmu-quick-links a:focus {
+    border-color: var(--mmu-primary);
+
+    transform: translateX(4px);
+
+    box-shadow:
+        0 8px 24px rgba(17, 24, 39, 0.06);
+}
+
+.mmu-quick-links strong,
+.mmu-quick-links span {
+    display: block;
+}
+
+.mmu-quick-links strong {
+    font-size: 15px;
+}
+
+.mmu-quick-links span {
+    margin-top: 4px;
+
+    color: var(--mmu-muted);
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   BENEFITS
+   ========================================================= */
+
+.mmu-benefits {
+    border-top: 1px solid var(--mmu-border);
+    border-bottom: 1px solid var(--mmu-border);
+
+    background: var(--mmu-white);
+}
+
+.mmu-benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mmu-benefit {
+    padding: 28px;
+}
+
+.mmu-benefit + .mmu-benefit {
+    border-left: 1px solid var(--mmu-border);
+}
+
+.mmu-benefit strong,
+.mmu-benefit span {
+    display: block;
+}
+
+.mmu-benefit strong {
+    color: var(--mmu-dark);
+
+    font-size: 16px;
+}
+
+.mmu-benefit span {
+    margin-top: 6px;
+
+    color: var(--mmu-muted);
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+.mmu-section {
+    padding: 90px 0;
+}
+
+.mmu-section-soft {
+    background: var(--mmu-soft);
+}
+
+.mmu-section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+
+    margin-bottom: 40px;
+}
+
+.mmu-section-heading h2,
+.mmu-method h2,
+.mmu-final-cta h2 {
+    margin: 0;
+
+    color: var(--mmu-dark);
+
+    font-size: clamp(32px, 4vw, 46px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+}
+
+.mmu-section-heading > p {
+    max-width: 470px;
+
+    margin: 0;
+
+    color: var(--mmu-muted);
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ARTICLE GRID
+   ========================================================= */
+
+.mmu-post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.mmu-post-card {
+    overflow: hidden;
+
+    margin: 0;
+
+    border: 1px solid var(--mmu-border);
+    border-radius: var(--mmu-radius);
+
+    background: var(--mmu-white);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.mmu-post-card:hover {
+    border-color: #d1d5db;
+
+    transform: translateY(-5px);
+
+    box-shadow: var(--mmu-shadow);
+}
+
+.mmu-post-image {
+    display: block;
+
+    width: 100%;
+    aspect-ratio: 16 / 10;
+
+    overflow: hidden;
+
+    background: var(--mmu-soft);
+}
+
+.mmu-post-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.35s ease;
+}
+
+.mmu-post-card:hover .mmu-post-image img {
+    transform: scale(1.035);
+}
+
+.mmu-image-placeholder {
+    display: grid;
+    place-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3f4f6,
+            #e5e7eb
+        );
+
+    color: var(--mmu-muted);
+
+    font-size: 15px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.mmu-post-content {
+    padding: 22px;
+}
+
+.mmu-post-meta {
+    margin-bottom: 10px;
+
+    color: var(--mmu-primary);
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.mmu-post-card h3 {
+    margin: 0 0 12px;
+
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.mmu-post-card h3 a {
+    color: var(--mmu-dark);
+    text-decoration: none;
+}
+
+.mmu-post-card h3 a:hover {
+    color: var(--mmu-primary);
+}
+
+.mmu-post-card p {
+    margin: 0;
+
+    color: var(--mmu-muted);
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.mmu-read-more {
+    display: inline-block;
+
+    margin-top: 18px;
+
+    color: var(--mmu-primary);
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mmu-read-more:hover {
+    color: var(--mmu-primary-dark);
+}
+
+
+/* =========================================================
+   NO POSTS
+   ========================================================= */
+
+.mmu-no-posts {
+    grid-column: 1 / -1;
+
+    padding: 45px;
+
+    border: 1px dashed var(--mmu-border);
+    border-radius: var(--mmu-radius);
+
+    background: var(--mmu-soft);
+
+    text-align: center;
+}
+
+.mmu-no-posts h3 {
+    margin: 0 0 10px;
+
+    color: var(--mmu-dark);
+}
+
+.mmu-no-posts p {
+    margin: 0;
+
+    color: var(--mmu-muted);
+}
+
+
+/* =========================================================
+   GUIDES
+   ========================================================= */
+
+.mmu-guide-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.mmu-guide-card {
+    display: flex;
+    gap: 18px;
+
+    min-height: 230px;
+
+    padding: 28px;
+
+    border: 1px solid var(--mmu-border);
+    border-radius: var(--mmu-radius);
+
+    background: var(--mmu-white);
+    color: inherit;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.mmu-guide-card:hover {
+    border-color: var(--mmu-primary);
+
+    transform: translateY(-4px);
+
+    box-shadow: var(--mmu-shadow);
+}
+
+.mmu-guide-number {
+    flex: 0 0 auto;
+
+    color: var(--mmu-primary);
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.mmu-guide-card h3 {
+    margin: 0 0 10px;
+
+    color: var(--mmu-dark);
+
+    font-size: 21px;
+}
+
+.mmu-guide-card p {
+    margin: 0 0 18px;
+
+    color: var(--mmu-muted);
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.mmu-guide-card strong {
+    color: var(--mmu-primary);
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   METHODOLOGY
+   ========================================================= */
+
+.mmu-method {
+    padding: 90px 0;
+
+    background: var(--mmu-dark);
+    color: #d1d5db;
+}
+
+.mmu-method-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.mmu-method h2 {
+    color: var(--mmu-white);
+}
+
+.mmu-method-content > p {
+    max-width: 600px;
+
+    margin: 22px 0 0;
+
+    color: #d1d5db;
+
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.mmu-method-box {
+    display: grid;
+    gap: 12px;
+}
+
+.mmu-method-box > div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 19px;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.mmu-method-box strong {
+    color: #60a5fa;
+
+    font-size: 14px;
+}
+
+.mmu-method-box span {
+    color: #f3f4f6;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+.mmu-final-cta {
+    padding: 90px 0;
+
+    background: var(--mmu-white);
+}
+
+.mmu-final-cta-box {
+    padding: 60px;
+
+    border: 1px solid var(--mmu-border);
+    border-radius: 24px;
+
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(37, 99, 235, 0.12),
+            transparent 35%
+        ),
+        var(--mmu-soft);
+
+    text-align: center;
+}
+
+.mmu-final-cta h2 {
+    max-width: 760px;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mmu-final-cta p {
+    max-width: 620px;
+
+    margin: 20px auto 28px;
+
+    color: var(--mmu-muted);
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.mmu-home a:focus-visible {
+    outline: 3px solid rgba(37, 99, 235, 0.35);
+    outline-offset: 3px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .mmu-hero {
+        padding: 70px 0;
+    }
+
+    .mmu-hero-grid,
+    .mmu-method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mmu-hero-grid {
+        gap: 42px;
+    }
+
+    .mmu-method-grid {
+        gap: 45px;
+    }
+
+    .mmu-post-grid,
+    .mmu-guide-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .mmu-section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .mmu-section-heading > p {
+        max-width: 650px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 640px) {
+
+    .mmu-container {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .mmu-hero {
+        padding: 56px 0;
+    }
+
+    .mmu-hero h1 {
+        font-size: 40px;
+        line-height: 1.08;
+    }
+
+    .mmu-hero-description {
+        font-size: 17px;
+    }
+
+    .mmu-hero-actions {
+        flex-direction: column;
+    }
+
+    .mmu-btn {
+        width: 100%;
+    }
+
+    .mmu-hero-card {
+        padding: 22px;
+    }
+
+    .mmu-benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mmu-benefit + .mmu-benefit {
+        border-left: 0;
+        border-top: 1px solid var(--mmu-border);
+    }
+
+    .mmu-section {
+        padding: 64px 0;
+    }
+
+    .mmu-post-grid,
+    .mmu-guide-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mmu-guide-card {
+        min-height: auto;
+        padding: 22px;
+    }
+
+    .mmu-method {
+        padding: 64px 0;
+    }
+
+    .mmu-final-cta {
+        padding: 64px 0;
+    }
+
+    .mmu-final-cta-box {
+        padding: 38px 22px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL SCREENS
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+    .mmu-hero h1 {
+        font-size: 34px;
+    }
+
+    .mmu-section-heading h2,
+    .mmu-method h2,
+    .mmu-final-cta h2 {
+        font-size: 30px;
+    }
+}
