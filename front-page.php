@@ -95,8 +95,7 @@ get_header();
 
 
                     <a
-                        href="<?php echo esc_url( home_url( '/category/comparativo/' ) ); ?>"
-                    >
+                        href="<?php echo esc_url( home_url( '/category/comparativo-melhores-microfones-usb/' ) ); ?>"
                         <strong>
                             Comparativos
                         </strong>
@@ -210,8 +209,7 @@ get_header();
 
                 <a
                     class="mmu-use-case-card"
-                    href="<?php echo esc_url( home_url( '/category/guia-de-compras/' ) ); ?>"
-                >
+                href="<?php echo esc_url( home_url( '/category/guia-de-compras-melhores-microfones/' ) ); ?>"                >
                     <span class="mmu-use-case-icon">
                         ⭐
                     </span>
@@ -565,7 +563,7 @@ get_header();
 
                 <a
                     class="mmu-popular-card"
-                    href="<?php echo esc_url( home_url( '/category/guia-de-compras/' ) ); ?>"
+                    href="<?php echo esc_url( home_url( '/category/guia-de-compras-melhores-microfones/'  ) ); ?>"
                 >
 
                     <span>
@@ -628,7 +626,7 @@ get_header();
 
                 <a
                     class="mmu-guide-card"
-                    href="<?php echo esc_url( home_url( '/category/guia-de-compras/' ) ); ?>"
+                    href="<?php echo esc_url( home_url( '/category/guia-de-compras-melhores-microfones/' ) ); ?>"
                 >
 
                     <span class="mmu-guide-number">
@@ -657,7 +655,7 @@ get_header();
 
                 <a
                     class="mmu-guide-card"
-                    href="<?php echo esc_url( home_url( '/category/comparativo/' ) ); ?>"
+                    href="<?php echo esc_url( home_url( '/category/comparativo-melhores-microfones-usb/') ); ?>"
                 >
 
                     <span class="mmu-guide-number">
@@ -686,7 +684,7 @@ get_header();
 
                 <a
                     class="mmu-guide-card"
-                    href="<?php echo esc_url( home_url( '/category/reviews/' ) ); ?>"
+                    href="<?php echo esc_url( home_url( '/category/melhores-reviews/' ) ); ?>"
                 >
 
                     <span class="mmu-guide-number">
