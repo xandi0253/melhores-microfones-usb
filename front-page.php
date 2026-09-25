@@ -459,6 +459,140 @@ get_header();
 
     </section>
 
+        <!-- MAIS PROCURADOS -->
+    <section class="mmu-popular">
+
+        <div class="mmu-container">
+
+            <header class="mmu-popular-heading">
+
+                <div>
+
+                    <span class="mmu-eyebrow">
+                        MAIS PROCURADOS
+                    </span>
+
+                    <h2>
+                        Encontre o melhor microfone para cada necessidade
+                    </h2>
+
+                </div>
+
+                <p>
+                    Atalhos para alguns dos conteúdos mais úteis
+                    na hora de comparar e escolher um microfone USB.
+                </p>
+
+            </header>
+
+
+            <div class="mmu-popular-grid">
+
+                <a
+                    class="mmu-popular-card"
+                    href="<?php echo esc_url( home_url( '/category/microfone-usb-para-podcast/' ) ); ?>"
+                >
+
+                    <span>
+                        PODCAST
+                    </span>
+
+                    <h3>
+                        Melhores microfones USB para podcast
+                    </h3>
+
+                    <p>
+                        Opções para gravação de voz, entrevistas
+                        e produção de podcasts.
+                    </p>
+
+                    <strong>
+                        Ver recomendações →
+                    </strong>
+
+                </a>
+
+
+                <a
+                    class="mmu-popular-card"
+                    href="<?php echo esc_url( home_url( '/category/microfone-usb-para-streaming/' ) ); ?>"
+                >
+
+                    <span>
+                        STREAMING
+                    </span>
+
+                    <h3>
+                        Melhores microfones para streaming
+                    </h3>
+
+                    <p>
+                        Modelos para lives, games,
+                        transmissões e criação de conteúdo.
+                    </p>
+
+                    <strong>
+                        Ver recomendações →
+                    </strong>
+
+                </a>
+
+
+                <a
+                    class="mmu-popular-card"
+                    href="<?php echo esc_url( home_url( '/category/microfone-de-mesa/' ) ); ?>"
+                >
+
+                    <span>
+                        HOME OFFICE
+                    </span>
+
+                    <h3>
+                        Melhores microfones de mesa
+                    </h3>
+
+                    <p>
+                        Para reuniões, aulas online,
+                        chamadas e trabalho remoto.
+                    </p>
+
+                    <strong>
+                        Ver recomendações →
+                    </strong>
+
+                </a>
+
+
+                <a
+                    class="mmu-popular-card"
+                    href="<?php echo esc_url( home_url( '/category/guia-de-compras/' ) ); ?>"
+                >
+
+                    <span>
+                        CUSTO-BENEFÍCIO
+                    </span>
+
+                    <h3>
+                        Como escolher um bom microfone USB
+                    </h3>
+
+                    <p>
+                        Entenda quais características realmente
+                        importam antes de comprar.
+                    </p>
+
+                    <strong>
+                        Ver guia →
+                    </strong>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
 
     <!-- GUIAS -->
     <section
