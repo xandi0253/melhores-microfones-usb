@@ -11,13 +11,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header();
-?>
-
-<div style="background:#dc2626;color:#ffffff;padding:20px;text-align:center;font-size:22px;font-weight:700;">
-    TESTE CATEGORY.PHP ATIVO
-</div>
-
-<?php
 $category = get_queried_object();
 
 $category_name = single_cat_title( '', false );
