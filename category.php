@@ -16,6 +16,9 @@ $category = get_queried_object();
 $category_name = single_cat_title( '', false );
 $category_description = category_description();
 
+$category_slug = isset( $category->slug )
+    ? $category->slug
+    : '';
 ?>
 
 <main id="primary" class="mmu-category-page">
@@ -196,7 +199,7 @@ $category_description = category_description();
 
             <d<div class="mmu-category-links">
 
-    <?php if ( ! is_category( 'microfone-usb-para-podcast' ) ) : ?>
+    <?php if ( 'microfone-usb-para-podcast' !== $category_slug ) : ?>
 
         <a href="<?php echo esc_url( home_url( '/category/microfone-usb-para-podcast/' ) ); ?>">
             Podcast
@@ -205,7 +208,7 @@ $category_description = category_description();
     <?php endif; ?>
 
 
-    <?php if ( ! is_category( 'microfone-usb-para-streaming' ) ) : ?>
+    <?php if ( 'microfone-usb-para-streaming' !== $category_slug ) : ?>
 
         <a href="<?php echo esc_url( home_url( '/category/microfone-usb-para-streaming/' ) ); ?>">
             Streaming
@@ -214,7 +217,7 @@ $category_description = category_description();
     <?php endif; ?>
 
 
-    <?php if ( ! is_category( 'microfone-de-mesa' ) ) : ?>
+    <?php if ( 'microfone-de-mesa' !== $category_slug ) : ?>
 
         <a href="<?php echo esc_url( home_url( '/category/microfone-de-mesa/' ) ); ?>">
             Microfone de mesa
@@ -223,7 +226,7 @@ $category_description = category_description();
     <?php endif; ?>
 
 
-    <?php if ( ! is_category( 'comparativo-melhores-microfones-usb' ) ) : ?>
+    <?php if ( 'comparativo-melhores-microfones-usb' !== $category_slug ) : ?>
 
         <a href="<?php echo esc_url( home_url( '/category/comparativo-melhores-microfones-usb/' ) ); ?>">
             Comparativos
@@ -232,8 +235,7 @@ $category_description = category_description();
     <?php endif; ?>
 
 
-    <?php if ( ! is_category( 'guia-de-compras-melhores-microfones' ) ) : ?>
-
+    <?php if ( 'guia-de-compras-melhores-microfones' !== $category_slug ) : ?>
         <a href="<?php echo esc_url( home_url( '/category/guia-de-compras-melhores-microfones/' ) ); ?>">
             Guia de compras
         </a>
@@ -241,7 +243,7 @@ $category_description = category_description();
     <?php endif; ?>
 
 
-    <?php if ( ! is_category( 'melhores-reviews' ) ) : ?>
+    <?php if ( 'melhores-reviews' !== $category_slug ) : ?>
 
         <a href="<?php echo esc_url( home_url( '/category/melhores-reviews/' ) ); ?>">
             Reviews
