@@ -194,33 +194,62 @@ $category_description = category_description();
             </header>
 
 
-            <div class="mmu-category-links">
+            <d<div class="mmu-category-links">
 
-                <a href="<?php echo esc_url( home_url( '/category/microfone-usb-para-podcast/' ) ); ?>">
-                    Podcast
-                </a>
+    <?php if ( ! is_category( 'microfone-usb-para-podcast' ) ) : ?>
 
-                <a href="<?php echo esc_url( home_url( '/category/microfone-usb-para-streaming/' ) ); ?>">
-                    Streaming
-                </a>
+        <a href="<?php echo esc_url( home_url( '/category/microfone-usb-para-podcast/' ) ); ?>">
+            Podcast
+        </a>
 
-                <a href="<?php echo esc_url( home_url( '/category/microfone-de-mesa/' ) ); ?>">
-                    Microfone de mesa
-                </a>
+    <?php endif; ?>
 
-                <a href="<?php echo esc_url( home_url( '/category/comparativo-melhores-microfones-usb/' ) ); ?>">
-                    Comparativos
-                </a>
 
-                <a href="<?php echo esc_url( home_url( '/category/guia-de-compras-melhores-microfones/' ) ); ?>">
-                    Guia de compras
-                </a>
+    <?php if ( ! is_category( 'microfone-usb-para-streaming' ) ) : ?>
 
-                <a href="<?php echo esc_url( home_url( '/category/melhores-reviews/' ) ); ?>">
-                    Reviews
-                </a>
+        <a href="<?php echo esc_url( home_url( '/category/microfone-usb-para-streaming/' ) ); ?>">
+            Streaming
+        </a>
 
-            </div>
+    <?php endif; ?>
+
+
+    <?php if ( ! is_category( 'microfone-de-mesa' ) ) : ?>
+
+        <a href="<?php echo esc_url( home_url( '/category/microfone-de-mesa/' ) ); ?>">
+            Microfone de mesa
+        </a>
+
+    <?php endif; ?>
+
+
+    <?php if ( ! is_category( 'comparativo-melhores-microfones-usb' ) ) : ?>
+
+        <a href="<?php echo esc_url( home_url( '/category/comparativo-melhores-microfones-usb/' ) ); ?>">
+            Comparativos
+        </a>
+
+    <?php endif; ?>
+
+
+    <?php if ( ! is_category( 'guia-de-compras-melhores-microfones' ) ) : ?>
+
+        <a href="<?php echo esc_url( home_url( '/category/guia-de-compras-melhores-microfones/' ) ); ?>">
+            Guia de compras
+        </a>
+
+    <?php endif; ?>
+
+
+    <?php if ( ! is_category( 'melhores-reviews' ) ) : ?>
+
+        <a href="<?php echo esc_url( home_url( '/category/melhores-reviews/' ) ); ?>">
+            Reviews
+        </a>
+
+    <?php endif; ?>
+
+</div>
 
         </div>
 
