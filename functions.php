@@ -97,3 +97,27 @@ function mmu_excerpt_more( $more ) {
 }
 
 add_filter( 'excerpt_more', 'mmu_excerpt_more' );
+
+/**
+ * Carrega o CSS das páginas de categoria.
+ */
+function mmu_enqueue_category_assets() {
+
+    if ( is_category() ) {
+
+        $category_css_path = get_stylesheet_directory() . '/assets/css/category.css';
+
+        $category_css_version = file_exists( $category_css_path )
+            ? filemtime( $category_css_path )
+            : wp_get_theme()->get( 'Version' );
+
+        wp_enqueue_style(
+            'mmu-category-style',
+            get_stylesheet_directory_uri() . '/assets/css/category.css',
+            array( 'mmu-child-style' ),
+            $category_css_version
+        );
+    }
+}
+
+add_action( 'wp_enqueue_scripts', 'mmu_enqueue_category_assets', 20 );

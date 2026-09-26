@@ -1,0 +1,365 @@
+/* =========================================================
+   CATEGORY PAGE
+   Melhores Microfones USB
+   ========================================================= */
+
+.mmu-category-page {
+    background: #ffffff;
+    color: #374151;
+}
+
+.mmu-category-page .mmu-container {
+    width: min(1180px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+
+/* HERO
+--------------------------------------------------------- */
+
+.mmu-category-hero {
+    padding: 72px 0;
+    background:
+        linear-gradient(
+            135deg,
+            #f8fafc 0%,
+            #eff6ff 100%
+        );
+}
+
+.mmu-category-hero .mmu-eyebrow,
+.mmu-category-heading .mmu-eyebrow {
+    display: block;
+    margin-bottom: 12px;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.mmu-category-hero h1 {
+    max-width: 800px;
+    margin: 0;
+    color: #111827;
+    font-size: clamp(36px, 5vw, 58px);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+}
+
+.mmu-category-description {
+    max-width: 720px;
+    margin-top: 20px;
+    color: #6b7280;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.mmu-category-description p {
+    margin: 0;
+}
+
+
+/* CONTEÚDO
+--------------------------------------------------------- */
+
+.mmu-category-content {
+    padding: 80px 0 90px;
+}
+
+.mmu-category-heading {
+    margin-bottom: 38px;
+}
+
+.mmu-category-heading h2 {
+    max-width: 760px;
+    margin: 0;
+    color: #111827;
+    font-size: clamp(30px, 4vw, 42px);
+    font-weight: 800;
+    line-height: 1.15;
+    letter-spacing: -0.03em;
+}
+
+
+/* GRID
+--------------------------------------------------------- */
+
+.mmu-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+
+/* CARD
+--------------------------------------------------------- */
+
+.mmu-category-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: #ffffff;
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.mmu-category-card:hover {
+    transform: translateY(-4px);
+    border-color: #cbd5e1;
+    box-shadow: 0 18px 45px rgba(17, 24, 39, 0.08);
+}
+
+
+/* IMAGEM
+--------------------------------------------------------- */
+
+.mmu-category-card-image {
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 16 / 10;
+    background: #f3f4f6;
+}
+
+.mmu-category-card-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mmu-category-card:hover .mmu-category-card-image img {
+    transform: scale(1.03);
+}
+
+
+/* CONTEÚDO DO CARD
+--------------------------------------------------------- */
+
+.mmu-category-card-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.mmu-category-card-meta {
+    margin-bottom: 10px;
+    color: #6b7280;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.mmu-category-card h3 {
+    margin: 0 0 14px;
+    color: #111827;
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+}
+
+.mmu-category-card h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.mmu-category-card h3 a:hover,
+.mmu-category-card h3 a:focus {
+    color: #2563eb;
+}
+
+.mmu-category-card-excerpt {
+    margin-bottom: 22px;
+    color: #6b7280;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.mmu-category-card-excerpt p {
+    margin: 0;
+}
+
+.mmu-category-card-link {
+    margin-top: auto;
+    color: #2563eb;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mmu-category-card-link:hover,
+.mmu-category-card-link:focus {
+    color: #1d4ed8;
+}
+
+
+/* PAGINAÇÃO
+--------------------------------------------------------- */
+
+.mmu-category-pagination {
+    margin-top: 50px;
+}
+
+.mmu-category-pagination .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.mmu-category-pagination .page-numbers {
+    display: inline-flex;
+    min-width: 42px;
+    min-height: 42px;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #374151;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.mmu-category-pagination .page-numbers.current,
+.mmu-category-pagination .page-numbers:hover {
+    border-color: #2563eb;
+    background: #2563eb;
+    color: #ffffff;
+}
+
+
+/* EXPLORE TAMBÉM
+--------------------------------------------------------- */
+
+.mmu-category-explore {
+    padding: 80px 0;
+    background: #f7f8fa;
+}
+
+.mmu-category-links {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.mmu-category-links a {
+    display: flex;
+    min-height: 86px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 22px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: #ffffff;
+    color: #111827;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.mmu-category-links a::after {
+    content: "→";
+    color: #2563eb;
+}
+
+.mmu-category-links a:hover,
+.mmu-category-links a:focus {
+    transform: translateY(-2px);
+    border-color: #2563eb;
+    box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+}
+
+
+/* CATEGORIA VAZIA
+--------------------------------------------------------- */
+
+.mmu-category-empty {
+    padding: 45px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: #f8fafc;
+}
+
+.mmu-category-empty h2 {
+    margin: 0 0 10px;
+    color: #111827;
+}
+
+.mmu-category-empty p {
+    margin: 0;
+    color: #6b7280;
+}
+
+
+/* TABLET
+--------------------------------------------------------- */
+
+@media (max-width: 900px) {
+
+    .mmu-category-hero {
+        padding: 60px 0;
+    }
+
+    .mmu-category-content,
+    .mmu-category-explore {
+        padding: 65px 0;
+    }
+
+    .mmu-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .mmu-category-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* MOBILE
+--------------------------------------------------------- */
+
+@media (max-width: 640px) {
+
+    .mmu-category-page .mmu-container {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .mmu-category-hero {
+        padding: 48px 0;
+    }
+
+    .mmu-category-content,
+    .mmu-category-explore {
+        padding: 55px 0;
+    }
+
+    .mmu-category-heading {
+        margin-bottom: 28px;
+    }
+
+    .mmu-category-grid,
+    .mmu-category-links {
+        grid-template-columns: 1fr;
+    }
+
+    .mmu-category-card-content {
+        padding: 20px;
+    }
+
+    .mmu-category-card h3 {
+        font-size: 19px;
+    }
+}
