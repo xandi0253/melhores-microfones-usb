@@ -178,6 +178,89 @@ $category_slug = isset( $category->slug )
 
     </section>
 
+        <!-- COMO ESCOLHER -->
+    <?php if ( 'microfone-usb-para-streaming' === $category_slug ) : ?>
+
+        <section class="mmu-category-guide">
+
+            <div class="mmu-container">
+
+                <header class="mmu-category-heading">
+
+                    <span class="mmu-eyebrow">
+                        COMO ESCOLHER
+                    </span>
+
+                    <h2>
+                        Como escolher um microfone USB para streaming
+                    </h2>
+
+                    <p>
+                        Alguns pontos fazem diferença na qualidade da voz
+                        durante lives, games e transmissões.
+                    </p>
+
+                </header>
+
+
+                <div class="mmu-category-guide-grid">
+
+                    <div class="mmu-category-guide-item">
+                        <h3>Qualidade de captação</h3>
+                        <p>
+                            Priorize uma reprodução clara da voz, com bom nível
+                            de detalhes e baixo ruído.
+                        </p>
+                    </div>
+
+                    <div class="mmu-category-guide-item">
+                        <h3>Padrão polar</h3>
+                        <p>
+                            O padrão cardioide costuma funcionar bem para
+                            captar a voz e reduzir sons vindos de outras direções.
+                        </p>
+                    </div>
+
+                    <div class="mmu-category-guide-item">
+                        <h3>Controle de ganho</h3>
+                        <p>
+                            O ajuste de ganho no próprio microfone facilita
+                            controlar rapidamente a sensibilidade da captação.
+                        </p>
+                    </div>
+
+                    <div class="mmu-category-guide-item">
+                        <h3>Monitoramento</h3>
+                        <p>
+                            Uma saída para fone de ouvido permite acompanhar
+                            sua voz durante a transmissão.
+                        </p>
+                    </div>
+
+                    <div class="mmu-category-guide-item">
+                        <h3>Compatibilidade</h3>
+                        <p>
+                            Verifique a compatibilidade com computador,
+                            sistema operacional e programas utilizados nas lives.
+                        </p>
+                    </div>
+
+                    <div class="mmu-category-guide-item">
+                        <h3>Ambiente</h3>
+                        <p>
+                            Considere ruídos, teclado, ventiladores e a acústica
+                            do espaço onde você fará as transmissões.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    <?php endif; ?>
+
 
     <!-- NAVEGAÇÃO ENTRE CATEGORIAS -->
     <section class="mmu-category-explore">
