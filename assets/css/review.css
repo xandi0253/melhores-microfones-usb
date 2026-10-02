@@ -1,0 +1,117 @@
+
+/* ==========================================
+   MELHORES MICROFONES USB
+   Template de artigos individuais
+========================================== */
+
+.mmu-single-page {
+    width: 100%;
+}
+
+.mmu-single-container {
+    width: min(100% - 40px, 900px);
+    margin: 0 auto;
+}
+
+/* Cabeçalho do artigo */
+
+.mmu-single-header {
+    padding: 65px 0 40px;
+    text-align: center;
+}
+
+.mmu-single-eyebrow {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.mmu-single-title {
+    margin: 0 0 20px;
+    font-size: clamp(30px, 4vw, 46px);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.mmu-single-meta {
+    color: #64748b;
+    font-size: 14px;
+}
+
+/* Conteúdo do artigo */
+
+.mmu-single-content {
+    padding: 20px 0 80px;
+}
+
+.mmu-single-content p {
+    margin-bottom: 22px;
+    line-height: 1.85;
+}
+
+.mmu-single-content h2 {
+    margin: 45px 0 20px;
+    font-size: 28px;
+    line-height: 1.3;
+}
+
+.mmu-single-content h3 {
+    margin: 30px 0 15px;
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+.mmu-single-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+/* Tabelas */
+
+.mmu-single-content table {
+    width: 100%;
+    margin: 30px 0;
+    border-collapse: collapse;
+}
+
+.mmu-single-content th,
+.mmu-single-content td {
+    padding: 14px;
+    border: 1px solid #e2e8f0;
+    text-align: left;
+}
+
+.mmu-single-content th {
+    background: #f1f5f9;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    .mmu-single-container {
+        width: min(100% - 30px, 900px);
+    }
+
+    .mmu-single-header {
+        padding: 40px 0 25px;
+    }
+
+    .mmu-single-content h2 {
+        font-size: 24px;
+    }
+
+    .mmu-single-content h3 {
+        font-size: 20px;
+    }
+
+    .mmu-single-content table {
+        display: block;
+        overflow-x: auto;
+    }
+}

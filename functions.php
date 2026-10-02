@@ -121,3 +121,27 @@ function mmu_enqueue_category_assets() {
 }
 
 add_action( 'wp_enqueue_scripts', 'mmu_enqueue_category_assets', 20 );
+
+/**
+ * Carrega o CSS dos artigos individuais.
+ */
+function mmu_enqueue_single_assets() {
+
+    if ( is_single() ) {
+
+        $review_css_path = get_stylesheet_directory() . '/assets/css/review.css';
+
+        $review_css_version = file_exists( $review_css_path )
+            ? filemtime( $review_css_path )
+            : wp_get_theme()->get( 'Version' );
+
+        wp_enqueue_style(
+            'mmu-review-style',
+            get_stylesheet_directory_uri() . '/assets/css/review.css',
+            array( 'mmu-child-style' ),
+            $review_css_version
+        );
+    }
+}
+
+add_action( 'wp_enqueue_scripts', 'mmu_enqueue_single_assets', 20 );
