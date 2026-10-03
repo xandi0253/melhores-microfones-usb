@@ -145,3 +145,79 @@ function mmu_enqueue_single_assets() {
 }
 
 add_action( 'wp_enqueue_scripts', 'mmu_enqueue_single_assets', 20 );
+
+/**
+ * Shortcode para bloco de produto / afiliado.
+ *
+ * Uso:
+ * [mmu_produto nome="FIFINE AM8" descricao="Microfone dinâmico com USB e XLR" url="https://..."]
+ */
+function mmu_product_shortcode( $atts ) {
+
+    $atts = shortcode_atts(
+        array(
+            'nome'      => '',
+            'descricao' => '',
+            'url'       => '',
+            'botao'     => 'Ver preço atual',
+        ),
+        $atts,
+        'mmu_produto'
+    );
+
+    $nome      = sanitize_text_field( $atts['nome'] );
+    $descricao = sanitize_text_field( $atts['descricao'] );
+    $url       = esc_url( $atts['url'] );
+    $botao     = sanitize_text_field( $atts['botao'] );
+
+    if ( empty( $nome ) ) {
+        return '';
+    }
+
+    ob_start();
+    ?>
+
+    <aside class="mmu-buy-box">
+
+        <h3>
+            <?php echo esc_html( $nome ); ?>
+        </h3>
+
+        <?php if ( ! empty( $descricao ) ) : ?>
+
+            <p>
+                <?php echo esc_html( $descricao ); ?>
+            </p>
+
+        <?php endif; ?>
+
+        <?php if ( ! empty( $url ) ) : ?>
+
+            <div class="mmu-buy-actions">
+
+                <a
+                    class="mmu-buy-button"
+                    href="<?php echo esc_url( $url ); ?>"
+                    target="_blank"
+                    rel="nofollow sponsored noopener"
+                >
+                    <?php echo esc_html( $botao ); ?>
+                </a>
+
+            </div>
+
+        <?php endif; ?>
+
+        <p class="mmu-affiliate-disclosure">
+            Divulgação: podemos receber uma comissão por compras realizadas
+            através dos links desta página, sem custo adicional para você.
+        </p>
+
+    </aside>
+
+    <?php
+
+    return ob_get_clean();
+}
+
+add_shortcode( 'mmu_produto', 'mmu_product_shortcode' );

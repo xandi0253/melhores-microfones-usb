@@ -88,6 +88,62 @@
 
 .mmu-single-content th {
     background: #f1f5f9;
+
+}
+
+/* ==========================================
+   BLOCO DE COMPRA / AFILIADOS
+========================================== */
+
+.mmu-buy-box {
+    margin: 40px 0;
+    padding: 28px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #f8fafc;
+}
+
+.mmu-buy-box h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.mmu-buy-box p {
+    margin-bottom: 18px;
+}
+
+.mmu-buy-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 22px 0 15px;
+}
+
+.mmu-buy-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.mmu-buy-button:hover {
+    color: #ffffff;
+    opacity: 0.88;
+}
+
+.mmu-affiliate-disclosure {
+    margin-top: 15px;
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.6;
 }
 
 /* Responsividade */
@@ -114,4 +170,16 @@
         display: block;
         overflow-x: auto;
     }
+
+    .mmu-buy-box {
+    padding: 22px;
+   }
+
+    .mmu-buy-actions {
+    flex-direction: column;
+   }
+
+    .mmu-buy-button {
+    width: 100%;
+   }
 }
