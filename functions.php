@@ -156,19 +156,21 @@ function mmu_product_shortcode( $atts ) {
 
     $atts = shortcode_atts(
         array(
-            'nome'      => '',
-            'descricao' => '',
-            'url'       => '',
-            'botao'     => 'Ver preço atual',
+            'nome'          => '',
+            'descricao'     => '',
+            'amazon'        => '',
+            'mercado_livre' => '',
+            'shopee'        => '',
         ),
         $atts,
         'mmu_produto'
     );
 
-    $nome      = sanitize_text_field( $atts['nome'] );
-    $descricao = sanitize_text_field( $atts['descricao'] );
-    $url       = esc_url( $atts['url'] );
-    $botao     = sanitize_text_field( $atts['botao'] );
+    $nome          = sanitize_text_field( $atts['nome'] );
+    $descricao     = sanitize_text_field( $atts['descricao'] );
+    $amazon        = esc_url( $atts['amazon'] );
+    $mercado_livre = esc_url( $atts['mercado_livre'] );
+    $shopee        = esc_url( $atts['shopee'] );
 
     if ( empty( $nome ) ) {
         return '';
@@ -191,18 +193,48 @@ function mmu_product_shortcode( $atts ) {
 
         <?php endif; ?>
 
-        <?php if ( ! empty( $url ) ) : ?>
+        <?php if ( $amazon || $mercado_livre || $shopee ) : ?>
 
             <div class="mmu-buy-actions">
 
-                <a
-                    class="mmu-buy-button"
-                    href="<?php echo esc_url( $url ); ?>"
-                    target="_blank"
-                    rel="nofollow sponsored noopener"
-                >
-                    <?php echo esc_html( $botao ); ?>
-                </a>
+                <?php if ( $amazon ) : ?>
+
+                    <a
+                        class="mmu-buy-button"
+                        href="<?php echo esc_url( $amazon ); ?>"
+                        target="_blank"
+                        rel="nofollow sponsored noopener"
+                    >
+                        Ver na Amazon
+                    </a>
+
+                <?php endif; ?>
+
+                <?php if ( $mercado_livre ) : ?>
+
+                    <a
+                        class="mmu-buy-button"
+                        href="<?php echo esc_url( $mercado_livre ); ?>"
+                        target="_blank"
+                        rel="nofollow sponsored noopener"
+                    >
+                        Ver no Mercado Livre
+                    </a>
+
+                <?php endif; ?>
+
+                <?php if ( $shopee ) : ?>
+
+                    <a
+                        class="mmu-buy-button"
+                        href="<?php echo esc_url( $shopee ); ?>"
+                        target="_blank"
+                        rel="nofollow sponsored noopener"
+                    >
+                        Ver na Shopee
+                    </a>
+
+                <?php endif; ?>
 
             </div>
 
