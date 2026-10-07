@@ -42,6 +42,17 @@
     font-size: 14px;
 }
 
+.mmu-single-featured-image {
+    margin: 35px 0 0;
+}
+
+.mmu-single-featured-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
 /* Conteúdo do artigo */
 
 .mmu-single-content {
