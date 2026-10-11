@@ -253,3 +253,12 @@ function mmu_product_shortcode( $atts ) {
 }
 
 add_shortcode( 'mmu_produto', 'mmu_product_shortcode' );
+
+/**
+ * MMU Comparativos: cadastro administrativo de produtos.
+ * Mantido em arquivo separado para preservar os shortcodes existentes.
+ */
+$mmu_products_module = get_stylesheet_directory() . '/inc/mmu-produtos.php';
+if ( file_exists( $mmu_products_module ) ) {
+    require_once $mmu_products_module;
+}
