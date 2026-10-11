@@ -262,3 +262,10 @@ $mmu_products_module = get_stylesheet_directory() . '/inc/mmu-produtos.php';
 if ( file_exists( $mmu_products_module ) ) {
     require_once $mmu_products_module;
 }
+
+
+/** MMU Comparativos: cadastro editorial de rankings. */
+$mmu_rankings_module = get_stylesheet_directory() . '/inc/mmu-rankings.php';
+if ( file_exists( $mmu_rankings_module ) ) {
+    require_once $mmu_rankings_module;
+}
