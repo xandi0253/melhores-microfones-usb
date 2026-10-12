@@ -269,3 +269,10 @@ $mmu_rankings_module = get_stylesheet_directory() . '/inc/mmu-rankings.php';
 if ( file_exists( $mmu_rankings_module ) ) {
     require_once $mmu_rankings_module;
 }
+
+
+/** MMU Comparativos: renderização dos cards e shortcode. */
+$mmu_comparativo_render = get_stylesheet_directory() . '/inc/mmu-comparativo-render.php';
+if ( file_exists( $mmu_comparativo_render ) ) {
+    require_once $mmu_comparativo_render;
+}
