@@ -1,0 +1,28 @@
+/* MMU Comparativos — estilos isolados do tema e responsivos. */
+.mmu-comparativo{margin:2.5rem 0;color:#172033}
+.mmu-comparativo *{box-sizing:border-box}
+.mmu-comparativo__header{margin-bottom:1.5rem}
+.mmu-comparativo__header h2{margin:0 0 .5rem;font-size:clamp(1.5rem,3vw,2rem)}
+.mmu-comparativo__header p{margin:0;color:#566276}
+.mmu-comparativo__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem}
+.mmu-comparativo__card{display:flex;flex-direction:column;gap:.75rem;min-width:0;padding:1.4rem;background:#fff;border:1px solid #dce2ea;border-radius:16px;box-shadow:0 8px 24px rgba(16,24,40,.06)}
+.mmu-comparativo__badges{display:flex;gap:.5rem;flex-wrap:wrap}
+.mmu-comparativo__rank,.mmu-comparativo__featured{display:inline-block;padding:.35rem .65rem;border-radius:999px;font-size:.78rem;font-weight:700}
+.mmu-comparativo__rank{background:#eef2f7;color:#223047}
+.mmu-comparativo__featured{background:#fff0c2;color:#684500}
+.mmu-comparativo__image{display:flex;align-items:center;justify-content:center;min-height:180px}
+.mmu-comparativo__image img{display:block;width:auto;max-width:100%;height:auto;max-height:220px;object-fit:contain}
+.mmu-comparativo__card h3{margin:0;font-size:1.3rem;line-height:1.3}
+.mmu-comparativo__specs,.mmu-comparativo__description{margin:0;color:#526074;line-height:1.6}
+.mmu-comparativo__specs{font-weight:600}
+.mmu-comparativo__details strong{display:block;margin-bottom:.3rem}
+.mmu-comparativo__details ul{margin:0;padding-left:1.3rem}
+.mmu-comparativo__details li{margin:.25rem 0}
+.mmu-comparativo__details:not(.mmu-comparativo__cons) li::marker{color:#16803e}
+.mmu-comparativo__cons li::marker{color:#b45309}
+.mmu-comparativo__actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:auto;padding-top:.5rem}
+.mmu-comparativo__button{display:inline-flex;align-items:center;justify-content:center;flex:1 1 145px;min-height:44px;padding:.65rem .8rem;border-radius:9px;background:#18263c;color:#fff!important;font-weight:700;font-size:.9rem;text-align:center;text-decoration:none!important;transition:background .2s ease}
+.mmu-comparativo__button:hover,.mmu-comparativo__button:focus{background:#334f73;color:#fff!important}
+.mmu-comparativo__button:focus-visible{outline:3px solid #e0a300;outline-offset:2px}
+.mmu-comparativo__disclosure{margin:1rem 0 0;color:#64748b;font-size:.85rem;line-height:1.5}
+@media(max-width:760px){.mmu-comparativo__grid{grid-template-columns:1fr}.mmu-comparativo__card{padding:1rem}.mmu-comparativo__image{min-height:140px}}
