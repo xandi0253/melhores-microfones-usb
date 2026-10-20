@@ -26,3 +26,147 @@
 .mmu-comparativo__button:focus-visible{outline:3px solid #e0a300;outline-offset:2px}
 .mmu-comparativo__disclosure{margin:1rem 0 0;color:#64748b;font-size:.85rem;line-height:1.5}
 @media(max-width:760px){.mmu-comparativo__grid{grid-template-columns:1fr}.mmu-comparativo__card{padding:1rem}.mmu-comparativo__image{min-height:140px}}
+
+/* ==================================================
+   MMU - Melhorias visuais dos comparativos
+   ================================================== */
+
+/* Ampliar a área de conteúdo nas páginas com ranking */
+body:not(.has-sidebar) .site.grid-container:has(.mmu-comparativo) {
+    max-width: 1200px;
+}
+
+body:not(.has-sidebar) .site-content:has(.mmu-comparativo) {
+    display: block;
+}
+
+body:not(.has-sidebar) .content-area:has(.mmu-comparativo),
+body:not(.has-sidebar) .site-main:has(.mmu-comparativo) {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Estrutura do comparativo */
+.mmu-comparativo {
+    width: 100%;
+    margin: 2.5rem 0;
+}
+
+.mmu-comparativo__grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* Cards dos produtos */
+.mmu-comparativo__card {
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+    transition: box-shadow 0.2s ease;
+}
+
+.mmu-comparativo__card:hover {
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.10);
+}
+
+/* Imagens padronizadas */
+.mmu-comparativo__image {
+    min-height: 230px;
+    padding: 12px;
+}
+
+.mmu-comparativo__image img {
+    max-width: 100%;
+    max-height: 220px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Títulos */
+.mmu-comparativo__card h3 {
+    font-size: 1.25rem;
+    line-height: 1.4;
+    font-weight: 700;
+    color: #172033;
+}
+
+/* Textos */
+.mmu-comparativo__description,
+.mmu-comparativo__specs {
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+/* Botões de afiliados */
+.mmu-comparativo__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: auto;
+}
+
+.mmu-comparativo__button {
+    flex: 1 1 145px;
+    min-height: 46px;
+    padding: 12px;
+    border-radius: 9px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    background: #18263c;
+    color: #ffffff !important;
+}
+
+.mmu-comparativo__button:hover,
+.mmu-comparativo__button:focus {
+    background: #304b70;
+    color: #ffffff !important;
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+    .mmu-comparativo__grid {
+        gap: 16px;
+    }
+
+    .mmu-comparativo__card {
+        padding: 18px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 760px) {
+    .mmu-comparativo__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mmu-comparativo__card {
+        padding: 18px;
+    }
+
+    .mmu-comparativo__image {
+        min-height: 180px;
+    }
+
+    .mmu-comparativo__actions {
+        flex-direction: column;
+    }
+
+    .mmu-comparativo__button {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+/* Acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+    .mmu-comparativo__card,
+    .mmu-comparativo__button {
+        transition: none;
+    }
+}
+
