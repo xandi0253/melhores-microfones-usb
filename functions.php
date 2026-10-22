@@ -276,3 +276,19 @@ $mmu_comparativo_render = get_stylesheet_directory() . '/inc/mmu-comparativo-ren
 if ( file_exists( $mmu_comparativo_render ) ) {
     require_once $mmu_comparativo_render;
 }
+
+/**
+ * Estilos do cabeçalho; não altera a configuração de menus no WordPress.
+ */
+function mmu_enqueue_header_styles() {
+    $path = get_stylesheet_directory() . '/assets/css/header.css';
+    if ( file_exists( $path ) ) {
+        wp_enqueue_style(
+            'mmu-header-style',
+            get_stylesheet_directory_uri() . '/assets/css/header.css',
+            array( 'mmu-child-style' ),
+            filemtime( $path )
+        );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'mmu_enqueue_header_styles', 30 );
