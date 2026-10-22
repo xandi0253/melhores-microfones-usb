@@ -114,7 +114,7 @@ get_header();
     </section>
 
         <!-- ESCOLHA POR FINALIDADE -->
-    <section class="mmu-use-cases">
+    <section id="finalidades" class="mmu-use-cases">
 
         <div class="mmu-container">
 
