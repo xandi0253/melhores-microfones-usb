@@ -317,3 +317,11 @@ function mmu_enqueue_header_styles() {
     }
 }
 add_action( 'wp_enqueue_scripts', 'mmu_enqueue_header_styles', 30 );
+
+function mmu_enqueue_affiliate_card_styles() {
+    $path = get_stylesheet_directory() . '/assets/css/affiliate-cards.css';
+    if ( file_exists( $path ) ) {
+        wp_enqueue_style( 'mmu-affiliate-cards', get_stylesheet_directory_uri() . '/assets/css/affiliate-cards.css', array( 'mmu-child-style' ), filemtime( $path ) );
+    }
+}
+add_action( 'wp_enqueue_scripts', 'mmu_enqueue_affiliate_card_styles', 30 );
