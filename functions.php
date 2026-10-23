@@ -150,12 +150,14 @@ add_action( 'wp_enqueue_scripts', 'mmu_enqueue_single_assets', 20 );
  * Shortcode para bloco de produto / afiliado.
  *
  * Uso:
- * [mmu_produto nome="FIFINE AM8" descricao="Microfone dinâmico com USB e XLR" url="https://..."]
+ * [mmu_produto id="123"] para reutilizar um Produto MMU publicado.
+ * O formato antigo com nome, descricao e links continua funcionando.
  */
 function mmu_product_shortcode( $atts ) {
 
     $atts = shortcode_atts(
         array(
+            'id'            => 0,
             'nome'          => '',
             'descricao'     => '',
             'amazon'        => '',
@@ -165,6 +167,25 @@ function mmu_product_shortcode( $atts ) {
         $atts,
         'mmu_produto'
     );
+
+    $product_id = absint( $atts['id'] );
+    $product_image = '';
+    if ( $product_id ) {
+        if ( 'mmu_produto_item' !== get_post_type( $product_id ) || 'publish' !== get_post_status( $product_id ) ) {
+            return '';
+        }
+        $atts['nome'] = get_the_title( $product_id );
+        $atts['descricao'] = wp_trim_words(
+            wp_strip_all_tags( strip_shortcodes( (string) get_post_field( 'post_content', $product_id ) ) ),
+            35
+        );
+        $atts['amazon'] = get_post_meta( $product_id, 'mmu_product_amazon', true );
+        $atts['mercado_livre'] = get_post_meta( $product_id, 'mmu_product_mercado', true );
+        $atts['shopee'] = get_post_meta( $product_id, 'mmu_product_shopee', true );
+        if ( has_post_thumbnail( $product_id ) ) {
+            $product_image = get_the_post_thumbnail( $product_id, 'medium', array( 'loading' => 'lazy' ) );
+        }
+    }
 
     $nome          = sanitize_text_field( $atts['nome'] );
     $descricao     = sanitize_text_field( $atts['descricao'] );
@@ -180,6 +201,10 @@ function mmu_product_shortcode( $atts ) {
     ?>
 
     <aside class="mmu-buy-box">
+
+        <?php if ( $product_image ) : ?>
+            <div class="mmu-buy-image"><?php echo wp_kses_post( $product_image ); ?></div>
+        <?php endif; ?>
 
         <h3>
             <?php echo esc_html( $nome ); ?>
